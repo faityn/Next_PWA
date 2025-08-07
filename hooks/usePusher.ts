@@ -1,6 +1,4 @@
-"use server";
 import Pusher from "pusher-js";
-
 import { useEffect } from "react";
 
 export function usePusher(
@@ -9,7 +7,7 @@ export function usePusher(
   callback: (data: any) => void
 ) {
   useEffect(() => {
-    const pusher = new Pusher("c1937d44f34d53dad837", {
+    const pusher = new Pusher("4c98bf3818c8b2f71c1f", {
       cluster: "ap3",
     });
 

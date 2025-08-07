@@ -1,4 +1,3 @@
-// components/PusherTest.tsx
 "use client";
 
 import { useEffect, useState } from "react";
@@ -13,8 +12,8 @@ export default function PusherTest() {
     const channel = pusherClient.subscribe("my-channel");
 
     channel.bind("my-event", (data: any) => {
-      toast.info(`Msg: ${data.message}`);
       setIncomingMessage(data.message);
+      toast.info(`Msg: ${data.message}`);
     });
 
     return () => {

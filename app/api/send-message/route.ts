@@ -4,8 +4,8 @@ import Pusher from "pusher";
 
 const pusher = new Pusher({
   appId: "2033453",
-  key: "c1937d44f34d53dad837",
-  secret: "d43880bb47f44633b6e3",
+  key: "4c98bf3818c8b2f71c1f",
+  secret: "cb1ebc49801ffd9a35ce",
   cluster: "ap3",
   useTLS: true,
 });
