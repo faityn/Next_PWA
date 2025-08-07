@@ -1,10 +1,9 @@
 import admin from "firebase-admin";
 import { Message } from "firebase-admin/messaging";
 import { NextRequest, NextResponse } from "next/server";
-
 // Initialize Firebase Admin SDK
 if (!admin.apps.length) {
-  const serviceAccount = require("@/service_key.json");
+  const serviceAccount = JSON.parse(process.env.NEXT_PUBLIC_CODE_KEY!);
   admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
   });
