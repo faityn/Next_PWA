@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="theme-color" content="#317EFB" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="application-name" content="My PWA App" />
+        <meta name="apple-mobile-web-app-title" content="My PWA App" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <link rel="icon" href="/icon_s.png" />
+        <link rel="apple-touch-icon" href="/icon.png" />
+      </Head>
       <body className={inter.className}>
         <Toaster />
 
