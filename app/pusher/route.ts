@@ -1,4 +1,4 @@
-// pages/api/send-message.ts
+"use server";
 import type { NextApiRequest, NextApiResponse } from "next";
 import Pusher from "pusher";
 
